@@ -1,0 +1,18 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="mk">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10694</md:content-id>
+    <md:title>ПАРЦИЈАЛНИ ИЗВОДИ </md:title>
+    <md:language>mk</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>14ba05f6-4dcb-478a-92ef-06753b1a11f7</md:uuid>
+<md:slug>partsijalni-izvodi</md:slug>
+</metadata>
+  <col:content>
+    <col:module document="m21355"/>
+    <col:module document="m21363"/>
+    <col:module document="m21610"/>
+    <col:module document="m21438"/>
+    <col:module document="m22420"/>
+    <col:module document="m22425"/>
+  </col:content>
+</col:collection>

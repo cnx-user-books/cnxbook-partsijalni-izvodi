@@ -1,0 +1,584 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>ЕКСТРЕМНИ ВРЕДНОСТИ НА ФУНКЦИЈА ОД ДВЕ ПРОМЕНЛИВИ</title>
+  <metadata>
+  <md:content-id>m22425</md:content-id><md:title>ЕКСТРЕМНИ ВРЕДНОСТИ НА ФУНКЦИЈА ОД ДВЕ ПРОМЕНЛИВИ</md:title>
+  <md:abstract>За функција од две промелниви се даваат потребните и доволните услови за релативен екстрем (минимум или максимум) во дадена стационарна точка.
+The first and second partial test for relative extreme (minimum or maximum) for function of two variables are given.</md:abstract>
+  <md:uuid>4faf6f2c-aa9b-4799-ac4e-f83d904f0ba1</md:uuid>
+</metadata>
+
+<content>
+    <para id="id8054008">Ќе прикажеме уште една примена на парцијалните изводи на функција од две променли­ви: определување на локалните екстреми на функција.</para>
+    <para id="id5532634">Нека <emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=f \( x,y \) } {}</m:annotation></m:semantics></m:math></emphasis>  е функција дефинирана во 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>ε</m:mi><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ε - {}} {}</m:annotation></m:semantics></m:math>околина на точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \)  "." } {}</m:annotation></m:semantics></m:math> Точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math> е </para>
+    <list id="id8215620" list-type="bulleted"><item><term>точка на локален минимум</term><emphasis effect="italics"/><emphasis effect="italics"/> ако 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">&gt;</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi><m:mi/><m:mo stretchy="false">∀</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">∈</m:mo><m:mi>K</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>M</m:mi><m:mi>,</m:mi><m:mi>ε</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">∩</m:mo><m:msub><m:mi>D</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) &gt;f \( a,b \) ,~ forall  \( x,y \)  in K \( M,ε \)  intersection D rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> ;</item>
+    </list>
+    <list id="id5441948" list-type="bulleted"><item><term>точка на локален максимум</term> ако 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">&lt;</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi><m:mi/><m:mo stretchy="false">∀</m:mo><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">∈</m:mo><m:mi>K</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>M</m:mi><m:mi>,</m:mi><m:mi>ε</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">∩</m:mo><m:msub><m:mi>D</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) &lt;f \( a,b \) ,~ forall  \( x,y \)  in K \( M,ε \)  intersection D rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math>.</item>
+    </list>
+    <para id="id5095755">Локалнитот минимум и максимум се нарекуваат <term>локални екстреми</term> на функцијата. Најмалиот локален минимум (максимум) во разгледуваната област се нарекува <term>глобален минимум (максимум)</term> во таа област.</para>
+    <section id="id5922504">
+      <title>Потребен услов за локален екстрем:</title>
+      <para id="id1171229308674">Ако функцијата<emphasis effect="italics"/><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) } {}</m:annotation></m:semantics></m:math></emphasis><emphasis effect="italics"/> има локален екстрем во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) ,} {}</m:annotation></m:semantics></m:math><emphasis effect="italics"/> тогаш сите парцијални изводи од прв ред во точката<emphasis effect="italics"/><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math></emphasis><emphasis effect="italics"/> се еднакви на нула<emphasis effect="italics"/></para>
+      <para id="id6797241"><m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>f</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mi>a</m:mi>
+                          <m:mi>,</m:mi>
+                          <m:mi>b</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                    <m:mi/>
+                    <m:mi> и </m:mi>
+                    <m:mi/>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>f</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mi>a</m:mi>
+                          <m:mi>,</m:mi>
+                          <m:mi>b</m:mi>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{ {  { partial f \( a,b \) }  over  { partial x} } =0~i~ {  { partial f \( a,b \) }  over  { partial y} } =0} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      <para id="id3621232">или тие не постојат.</para>
+    </section>
+    <section id="id8462251">
+      <title>Пример 1. </title>
+      <para id="id1171226961265">Функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">−</m:mo><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=1 - x rSup { size 8{2} }  - y rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> има локален максимум во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0,0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( 0,0 \) } {}</m:annotation></m:semantics></m:math> (Слика 1). Во таа точка функцијата е диференцијабилна и исполент е потребниот услов за локален екстрем </para>
+      <para id="id8704251"><m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>z</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>0,0</m:mn>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>x</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2x</m:mn>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">(</m:mo>
+                                <m:mn>0,0</m:mn>
+                                <m:mo stretchy="false">)</m:mo>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z \( 0,0 \) }  over  { partial x} } = - 2x/ rSub { size 8{ \( 0,0 \) } } =0} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      <para id="eip-480"><m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>z</m:mi>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mn>0,0</m:mn>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>2y</m:mn>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">(</m:mo>
+                                <m:mn>0,0</m:mn>
+                                <m:mo stretchy="false">)</m:mo>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mn>0</m:mn>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z \( 0,0 \) }  over  { partial y} } = - 2y/ rSub { size 8{ \( 0,0 \) } } =0 "." } {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      <table id="id8853902" summary="">
+        <tgroup cols="1">
+          <colspec colnum="1" colname="c1"/>
+          <tbody>
+            <row>
+              <entry>
+                <media id="id3300592" alt="">
+                  <image mime-type="image/png" src="../../media/graphics1.png"/>
+                </media>
+              </entry>
+            </row>
+            <row>
+              <entry>Слика 1. Локален максимум на диференцијабилна функција</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id839020">Условот парцијалните изводи од прв ред да се еднакви на нула во точка не е доволен за постоење на локален екстрем во таа точка. На пример, <emphasis effect="italics">хиперболичниот параболоид </emphasis>чија равенка е 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xy</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z= ital "xy"} {}</m:annotation></m:semantics></m:math> (Сл. 2) и за кој парцијалните изводи од прв ред во координатниот почеток се еднакви на нула, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mi>z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">(</m:mo><m:mn>0,0</m:mn><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msubsup><m:mi>z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0,0</m:mn><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {z}} sup { ' } rSub { size 8{x} }  \( 0,0 \) = { {z}} sup { ' } rSub { size 8{y} }  \( 0,0 \) =0} {}</m:annotation></m:semantics></m:math>, нема екстрем во координатниот почеток и ваквата точка се нарекува <term>седласта точка</term>.</para>
+      <table id="id8129671" summary="">
+        <tgroup cols="1">
+          <colspec colnum="1" colname="c1"/>
+          <tbody>
+            <row>
+              <entry>
+                <media id="id8157064" alt="">
+                  <image mime-type="image/png" src="../../media/graphics2.png"/>
+                </media>
+              </entry>
+            </row>
+            <row>
+              <entry>Сл. 2. Седласта површина и седласта точка</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1171231482380">Точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math> која заедно со својата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>ε</m:mi><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ε - {}} {}</m:annotation></m:semantics></m:math>околина припаѓа на областа на дефини­ра­ност на функцијата<emphasis effect="italics"/><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) } {}</m:annotation></m:semantics></m:math></emphasis> за која 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:mi/><m:msubsup><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {f}} sup { ' } rSub { size 8{x} }  \( a,b \) =0,`` { {f}} sup { ' } rSub { size 8{y} }  \( a,b \) =0} {}</m:annotation></m:semantics></m:math> се нарекува <term>стационарна точка</term> за функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f "." } {}</m:annotation></m:semantics></m:math> Значи потребен услов за постоење на локален екстрем во дадена точка е таа да е стационарна точка.</para>
+      <para id="id8957280">За вредностите на вторите парцијални изводи во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math> се воведуваат следните ознаки: </para>
+      <equation id="id4427237">
+        <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msubsup>
+                        <m:mi>f</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>xx</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow>
+                          <m:mi>'</m:mi>
+                          <m:mi>'</m:mi>
+                        </m:mrow>
+                      </m:msubsup>
+                    </m:mrow>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mi>,</m:mi>
+                    <m:mi>b</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mi>,</m:mi>
+                    <m:mi/>
+                    <m:mrow>
+                      <m:mi>B</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msubsup>
+                        <m:mi>f</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>xy</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow>
+                          <m:mi>'</m:mi>
+                          <m:mi>'</m:mi>
+                        </m:mrow>
+                      </m:msubsup>
+                    </m:mrow>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mi>,</m:mi>
+                    <m:mi>b</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mi>,</m:mi>
+                    <m:mi/>
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msubsup>
+                        <m:mi>f</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>yy</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow>
+                          <m:mi>'</m:mi>
+                          <m:mi>'</m:mi>
+                        </m:mrow>
+                      </m:msubsup>
+                    </m:mrow>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:mi>a</m:mi>
+                    <m:mi>,</m:mi>
+                    <m:mi>b</m:mi>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mi>,</m:mi>
+                    <m:mi/>
+                    <m:mrow>
+                      <m:mi>D</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>AC</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msup>
+                          <m:mi>B</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                    </m:mrow>
+                    <m:mtext>.</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{A= { {f}} sup { '' } rSub { size 8{ ital "xx"} }  \( a,b \) ,~B= { {f}} sup { '' } rSub { size 8{ ital "xy"} }  \( a,b \) ,~C= { {f}} sup { '' } rSub { size 8{ ital "yy"} }  \( a,b \) ,~D= ital "AC" - B rSup { size 8{2} }  "." } {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+    </section>
+    <section id="id8791174">
+      <title>Доволен услов за локален екстрем:</title>
+      <para id="id7950450">Ако точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math> е стационарна точка за функцијата<emphasis effect="italics"/><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) } {}</m:annotation></m:semantics></m:math></emphasis> и ако</para>
+      <table id="id2049614" summary="">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>1<sup>0</sup><emphasis effect="italics"/></entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>D</m:mi>
+                              <m:mo stretchy="false">&gt;</m:mo>
+                              <m:mn>0,</m:mn>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mi>A</m:mi>
+                              <m:mo stretchy="false">&lt;</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{D&gt;0,A&lt;0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry><emphasis effect="italics"/><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math></emphasis><emphasis effect="italics"/><emphasis effect="italics"/>има локален максимум во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math></entry>
+            </row>
+            <row>
+              <entry>2<sup>0</sup><emphasis effect="italics"/></entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>D</m:mi>
+                              <m:mo stretchy="false">&gt;</m:mo>
+                              <m:mn>0,</m:mn>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mi>A</m:mi>
+                              <m:mo stretchy="false">&gt;</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{D&gt;0,A&gt;0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry><emphasis effect="italics"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math></emphasis><emphasis effect="italics"/>има локален минимум во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math></entry>
+            </row>
+            <row>
+              <entry>3<sup>0</sup><emphasis effect="italics"/></entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>D</m:mi>
+                            <m:mo stretchy="false">&lt;</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{D&lt;0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry><emphasis effect="italics"/><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">(</m:mo><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M \( a,b \) } {}</m:annotation></m:semantics></m:math> е седласта точка на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math>(не постои локлаен екстрем во таа точка)</entry>
+            </row>
+            <row>
+              <entry>4<sup>0</sup><emphasis effect="italics"/></entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>D</m:mi>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{D=0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry>Егзистенцијата на локалниот екстрем е неизвесна и потребни се дополнителни испитувања.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id8769967">
+      <title>Пример 2. </title>
+      <para id="id1171229257348">Да се најдат локалните екстремните вредности на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xy</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) = ital "xy" \( x+y - 1 \)  "." } {}</m:annotation></m:semantics></m:math></para>
+      <para id="id2192613"><emphasis><emphasis effect="bold">Решение. </emphasis></emphasis><emphasis effect="bold"/>Потребниот услов за локален екстрем (постоење на стационарни точки) се определуваат од ситемот равенки</para>
+      <para id="eip-654"><m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mrow>
+                <m:mtable>
+                  <m:mtr>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∂</m:mo>
+                                  <m:mi>f</m:mi>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∂</m:mo>
+                                  <m:mi>x</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>y</m:mi>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mn>2x</m:mn>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:mi>y</m:mi>
+                              </m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">)</m:mo>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∂</m:mo>
+                                  <m:mi>f</m:mi>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∂</m:mo>
+                                  <m:mi>y</m:mi>
+                                </m:mrow>
+                              </m:mfrac>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>x</m:mi>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mi>x</m:mi>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:mn>2y</m:mn>
+                              </m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">)</m:mo>
+                            <m:mtext>.</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mtr>
+                </m:mtable>
+                <m:mrow/>
+              </m:mrow>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{ {  { partial f}  over  { partial x} } =y \( 2x+y - 1 \) }  {} # 
+ size 12{ {  { partial f}  over  { partial y} } =x \( x+2y - 1 \)  "." }  {} 
+} } {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      <para id="id1171229322960">Решението на системот ги дава четирите стационарни точки на функцијата: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mn>0,0</m:mn><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mn>0,1</m:mn><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mn>1,0</m:mn><m:mo stretchy="false">)</m:mo><m:mi>,</m:mi><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3,1</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{1} }  \( 0,0 \) ,M rSub { size 8{2} }  \( 0,1 \) ,M rSub { size 8{3} }  \( 1,0 \) ,M rSub { size 8{4} }  \( 1/3,1/3 \)  "." } {}</m:annotation></m:semantics></m:math></para>
+      <para id="id6861304">Во точките 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{1} } ,M rSub { size 8{2} } ,M rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math> не постои екстрем бидејќи во нив 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= - 1&lt;0 "." } {}</m:annotation></m:semantics></m:math></para>
+      <para id="id1195506">Во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{4} } } {}</m:annotation></m:semantics></m:math><sub/>се добива дека 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>9</m:mn></m:mrow></m:mrow><m:mo stretchy="false">&gt;</m:mo><m:mn>0,</m:mn></m:mrow><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow><m:mo stretchy="false">&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D=3/9&gt;0,A=2/3&gt;0} {}</m:annotation></m:semantics></m:math> и таа е точка на локален минимум во која вредноста на функцијата е 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3,1</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mtext>27</m:mtext></m:mrow></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{"min"} } =f \( 1/3,1/3 \) = - 1/"27" "." } {}</m:annotation></m:semantics></m:math> ◄</para>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,458 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>ТОТАЛЕН ДИФЕРЕНЦИЈАЛ</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21363</md:content-id>
+  <md:title>ТОТАЛЕН ДИФЕРЕНЦИЈАЛ</md:title>
+  <md:abstract>Се дефинира парцијален и тотален диференцијал и негово користење за приближно пресметување на функција во блиска околина на дадена точка.
+Definition of partial and total differential.</md:abstract>
+  <md:uuid>70fd845a-3c01-404e-822f-c6fcb4996f67</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169200430109">
+      <title>Тотален диференцијал</title>
+      <para id="id1169200003129">Нека е дадена функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=f \( x,y \) } {}</m:annotation></m:semantics></m:math>и нека 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi fontstyle="italic">Δx</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δx} {}</m:annotation></m:semantics></m:math> и 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi fontstyle="italic">Δy</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δy} {}</m:annotation></m:semantics></m:math> се соодветните нараснувања на променли­вите 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> и 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y "." } {}</m:annotation></m:semantics></m:math></para>
+      <section id="id1169200913789">
+        <title>Дефиниција </title>
+        <para id="id1169202898134">Производот 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mi fontstyle="italic">Δx</m:mi><m:mo stretchy="false">=</m:mo><m:msub><m:mi>d</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial f}  over  { partial x} } Δx=d rSub { size 8{x} } f} {}</m:annotation></m:semantics></m:math> се нарекува <term>парцијален диференцијал </term>на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math> по променливата<term><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math></term>, а производот 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mi fontstyle="italic">Δy</m:mi><m:mo stretchy="false">=</m:mo><m:msub><m:mi>d</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial f}  over  { partial y} } Δy=d rSub { size 8{y} } f} {}</m:annotation></m:semantics></m:math> се нареку­ва <term>парцијален диференцијал </term>на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math> по променливата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169200367433">Бидејќи
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi fontstyle="italic">Δx</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dx</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δx= ital "dx"} {}</m:annotation></m:semantics></m:math> и 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi fontstyle="italic">Δy</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dy</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δy= ital "dy"} {}</m:annotation></m:semantics></m:math>, парцијалните диференцијали се запишуваат како</para>
+        <para id="id1169196520884"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>d</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dx</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{d rSub { size 8{x} } f= {  { partial f}  over  { partial x} }  ital "dx"} {}</m:annotation></m:semantics></m:math> и 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>d</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>f</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dy</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{d rSub { size 8{y} } f= {  { partial f}  over  { partial y} }  ital "dy"} {}</m:annotation></m:semantics></m:math>.</para>
+      </section>
+      <section id="id1169197980041">
+        <title>Дефиниција </title>
+        <para id="id1169196355743">Сумата на парцијалните диференцијали </para>
+        <para id="id1169199000377"/>
+        <para id="id1169210074849">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>df</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>d</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>x</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:msub>
+                          <m:mi>d</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>y</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mi>f</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "df"=d rSub { size 8{x} } f+d rSub { size 8{y} } f} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id8715456">или </para>
+        <para id="id1169196043449">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>df</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mo stretchy="false">∂</m:mo>
+                            <m:mi>f</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">∂</m:mo>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>dx</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mfrac>
+                          <m:mrow>
+                            <m:mo stretchy="false">∂</m:mo>
+                            <m:mi>f</m:mi>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">∂</m:mo>
+                            <m:mi>y</m:mi>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dy</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ ital "df"= {  { partial f}  over  { partial x} }  ital "dx"+ {  { partial f}  over  { partial y} }  ital "dy"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id1169200375900">се нарекува <term>тотален диференцијал</term> на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=f \( x,y \) } {}</m:annotation></m:semantics></m:math>.</para>
+      </section>
+      <section id="id1169198332539">
+        <title>Пример 2 </title>
+        <para id="id1169196443483">Да се определат парцијалните диференцијали и тоталниот диференцијал на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>arcsin</m:mtext></m:mrow><m:mfrac><m:mi>x</m:mi><m:mi>y</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z="arcsin" {  {x}  over  {y} } } {}</m:annotation></m:semantics></m:math>.</para>
+      </section>
+      <section id="id1169196008762">
+        <title>Решение </title>
+        <para id="id1169196008776">Најпрво ги пресметуваме парцијалните изводи:</para>
+        <para id="id1169196008781"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mfrac><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:msqrt></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>y</m:mi></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial x} } = {  {1}  over  { sqrt {1 -  {  {x rSup { size 8{2} } }  over  {y rSup { size 8{2} } } } } } }  cdot  {  {1}  over  {y} } = {  {1}  over  { sqrt {y rSup { size 8{2} }  - x rSup { size 8{2} } } } } } {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169201031645"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mfrac><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:msqrt></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfenced open="(" close=")"><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mi>x</m:mi><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:mfenced></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>y</m:mi><m:msqrt><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial y} } = {  {1}  over  { sqrt {1 -  {  {x rSup { size 8{2} } }  over  {y rSup { size 8{2} } } } } } }  cdot  left ( -  {  {x}  over  {y rSup { size 8{2} } } }  right )= {  { - x}  over  {y sqrt {y rSup { size 8{2} }  - x rSup { size 8{2} } } } } } {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169200880134">Парцијалните диференцијали се:</para>
+        <para id="id1169200880139">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>d</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>x</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mi>f</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:msqrt>
+                            <m:mrow>
+                              <m:msup>
+                                <m:mi>y</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:msup>
+                                <m:mi>x</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                            </m:mrow>
+                          </m:msqrt>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>dx</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{d rSub { size 8{x} } f= {  {1}  over  { sqrt {y rSup { size 8{2} }  - x rSup { size 8{2} } } } }  ital "dx"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id1169196426080">и </para>
+        <para id="id1169196426085"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>d</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>y</m:mi><m:msqrt><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dy</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{d rSub { size 8{y} } f= {  { - x}  over  {y sqrt {y rSup { size 8{2} }  - x rSup { size 8{2} } } } }  ital "dy"} {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169214785772">а тоталниот диференцијал е </para>
+        <para id="id1169214785776"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>df</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>y</m:mi><m:mi/><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dx</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mi>x</m:mi></m:mrow><m:mi/><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dy</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow><m:mi>y</m:mi><m:msqrt><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "df"= {  {y` ital "dx" - x` ital "dy"}  over  {y sqrt {y rSup { size 8{2} }  - x rSup { size 8{2} } } } } } {}</m:annotation></m:semantics></m:math>. ◄</para>
+      </section>
+      <section id="id1169199403760">
+        <title>Дефиниција </title>
+        <para id="id1169199403771">Разликата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δf</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δx</m:mi></m:mrow><m:mi>,</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δy</m:mi></m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">−</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δf=f \( x+Δx,y+Δy \)  - f \( x,y \) } {}</m:annotation></m:semantics></m:math> се нарекува <term>тотално </term><emphasis effect="italics"/> или <term>вистинско нараснување</term> на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f} {}</m:annotation></m:semantics></m:math><emphasis effect="italics"/> во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A \( x,y \)  "." } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1169208585245">За мали промени на вредностите на аргументите на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z=f \( x,y \) } {}</m:annotation></m:semantics></m:math>, односно кога 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi fontstyle="italic">Δx</m:mi><m:mo stretchy="false">≈</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δx approx 0} {}</m:annotation></m:semantics></m:math> и 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi fontstyle="italic">Δy</m:mi><m:mo stretchy="false">≈</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δy approx 0} {}</m:annotation></m:semantics></m:math>, вистинското нараснување на функцијата може приближно да се пресмета преку диференцијалот, односно 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi fontstyle="italic">Δf</m:mi><m:mo stretchy="false">≈</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>df</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δf approx  ital "df"} {}</m:annotation></m:semantics></m:math>. Бидејќи </para>
+        <para id="id1169195941924"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δf</m:mi><m:mo stretchy="false">=</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δx</m:mi></m:mrow><m:mi>,</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δy</m:mi></m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">−</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δf=f \( x+Δx,y+Δy \)  - f \( x,y \) } {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169201017820">тогаш</para>
+        <para id="id1169201017824"/>
+        <para id="id1169201017828"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δx</m:mi></m:mrow><m:mi>,</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δy</m:mi></m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">≈</m:mo><m:mi>f</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>df</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x+Δx,y+Δy \)  approx f \( x,y \) + ital "df"} {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169198365120">Оваа релација овозможува приближно пресметување на вредноста на функцијата во близина на дадена точка, во која вредноста на функцијата лесно може да се пресмета.</para>
+      </section>
+      <section id="id1169198365128">
+        <title>Пример 3 </title>
+        <para id="id1169198365139">Со помош на тотален диференцијал приближно да се пресмета </para>
+        <para id="id1169198365146"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>ln</m:mtext><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:mrow><m:mn>1,</m:mn><m:mtext>03</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mrow><m:mn>0,</m:mn><m:mtext>98</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"ln" left ( nroot { size 8{3} }  {1,"03"} + nroot { size 8{4} }  {0,"98"}  - 1 right )} {}</m:annotation></m:semantics></m:math>.</para>
+      </section>
+      <section id="id1169200132796">
+        <title>Решение </title>
+        <para id="id1169200856722">Според обликот на дадениот израз чија вредност треба да се пресмета, определуваме функција од две променливи</para>
+        <para id="id1169200856728"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>ln</m:mtext></m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z="ln" left ( nroot { size 8{3} }  {x} + nroot { size 8{4} }  {y}  - 1 right )} {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169199507593">Во оваа функција вредноста 1,03 која е блиска до 1, се доделува на првата независна променлива која се запишува како 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δx</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow><m:mtext>03</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+Δx=1,"03"} {}</m:annotation></m:semantics></m:math> при што 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=1,} {}</m:annotation></m:semantics></m:math> а нараснувањето е 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δx</m:mi><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:mrow><m:mtext>03</m:mtext><m:mo stretchy="false">≈</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δx=0,"03" approx 0} {}</m:annotation></m:semantics></m:math>. Исто така, втората вредност 0,98 се доделува на втората независна променлива и таа се запишува како 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">Δy</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:mtext>98</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y+Δy=0,"98"} {}</m:annotation></m:semantics></m:math> и оваа вредност е во околина на точката на 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=1} {}</m:annotation></m:semantics></m:math>, а нарасну­вањето е 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δy</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>0,</m:mn></m:mrow></m:mrow><m:mrow><m:mtext>02</m:mtext><m:mo stretchy="false">≈</m:mo><m:mn>0</m:mn></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δy= - 0,"02" approx 0 "." } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id1169202702358">Применувајќи ја формулата за приближно пресметување со тотален диференцијал, се добива</para>
+        <para id="id1169202702363"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:mrow><m:mn>1,</m:mn><m:mtext>03</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mrow><m:mn>0,</m:mn><m:mtext>98</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo stretchy="false">≈</m:mo><m:mtext>ln</m:mtext></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:msup><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dz</m:mtext></m:mrow></m:mstyle></m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"ln" left ( nroot { size 8{3} }  {1,"03"} + nroot { size 8{4} }  {0,"98"}  - 1 right ) approx "ln" left ( nroot { size 8{3} }  {1 rSup { size 8{3} } } + nroot { size 8{4} }  {1}  - 1 right )+ ital "dz" \rline  rSub { size 8{x=1,y=1} } } {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169196390098">Вредноста на функцијата 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \) } {}</m:annotation></m:semantics></m:math> во точката (1,1) е</para>
+        <para id="id1169209589776"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mi>,</m:mi><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo><m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi/></m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>ln</m:mtext></m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f \( x,y \)  \rline  rSub { size 8{x=1,y=1} } =`"ln" left ( nroot { size 8{3} }  {1} + nroot { size 8{4} }  {1}  - 1 right )="ln"1=0} {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169203748443">додека за пресметување на вредноста на тоталниот диференцијал треба да се пресметаат парцијалните изводи. Парцијалните изводи на функцијата се:</para>
+        <para id="id1169203748454"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mrow><m:mroot><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>3</m:mn><m:mi/><m:mroot><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial x} } = {  {1}  over  { nroot { size 8{3} }  {x} + nroot { size 8{4} }  {y}  - 1} }  cdot  {  {1}  over  {3`` nroot { size 8{3} }  {x rSup { size 8{2} } } } } } {}</m:annotation></m:semantics></m:math> ,</para>
+        <equation id="id1169195966070">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>z</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">∂</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mrow>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mroot>
+                                <m:mi>x</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>3</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mroot>
+                                <m:mi>y</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>4</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                            </m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mfrac>
+                        <m:mo stretchy="false">⋅</m:mo>
+                        <m:mfrac>
+                          <m:mn>1</m:mn>
+                          <m:mrow>
+                            <m:mn>4</m:mn>
+                            <m:mi/>
+                            <m:mroot>
+                              <m:msup>
+                                <m:mi>y</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>3</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msup>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>4</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mroot>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial y} } = {  {1}  over  { nroot { size 8{3} }  {x} + nroot { size 8{4} }  {y}  - 1} }  cdot  {  {1}  over  {4`` nroot { size 8{4} }  {y rSup { size 8{3} } } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169196853816">и нивните вредности во точката 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>1,1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ \( 1,1 \) } {}</m:annotation></m:semantics></m:math> се</para>
+        <para id="id1169196833610"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac><m:mrow><m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mrow><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>3</m:mn><m:mi/><m:mroot><m:msup><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial x} }  \rline  rSub { size 8{x=1,y=1} } = {  {1}  over  { nroot { size 8{3} }  {1} + nroot { size 8{4} }  {1}  - 1} }  cdot  {  {1}  over  {3`` nroot { size 8{3} }  {1 rSup { size 8{2} } } } } = {  {1}  over  {3} } } {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169199015401"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>z</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>y</m:mi></m:mrow></m:mfrac><m:mrow><m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1,</m:mn></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mrow><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mi/><m:mroot><m:msup><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial z}  over  { partial y} }  \rline  rSub { size 8{x=1,y=1} } = {  {1}  over  { nroot { size 8{3} }  {1} + nroot { size 8{4} }  {1}  - 1} }  cdot  {  {1}  over  {4`` nroot { size 8{4} }  {1 rSup { size 8{3} } } } } = {  {1}  over  {4} } } {}</m:annotation></m:semantics></m:math>.</para>
+        <para id="id1169195978549">Тоталниот дифренцијал ќе има вредност</para>
+        <para id="id1169195978553"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dz</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow><m:mrow><m:mi fontstyle="italic">Δx</m:mi><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δy</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>0,</m:mn><m:mtext>03</m:mtext></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>0,</m:mn></m:mrow><m:mtext>02</m:mtext></m:mrow><m:mn>4</m:mn></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:mrow><m:mtext>01</m:mtext><m:mo stretchy="false">−</m:mo><m:mn>0,</m:mn></m:mrow><m:mrow><m:mtext>005</m:mtext><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:mtext>005</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dz"= {  {1}  over  {3} } Δx+ {  {1}  over  {4} } Δy= {  {0,"03"}  over  {3} } + {  { - 0,"02"}  over  {4} } =0,"01" - 0,"005"=0,"005"} {}</m:annotation></m:semantics></m:math>,</para>
+        <para id="id1169200232159">и заменувајќи ги пресметаните вредности во изразот </para>
+        <equation id="id1169200232164">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext>ln</m:mtext>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mroot>
+                                <m:mrow>
+                                  <m:mn>1,</m:mn>
+                                  <m:mtext>03</m:mtext>
+                                </m:mrow>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>3</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mroot>
+                                <m:mrow>
+                                  <m:mn>0,</m:mn>
+                                  <m:mtext>98</m:mtext>
+                                </m:mrow>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>4</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                            </m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mfenced>
+                        <m:mo stretchy="false">≈</m:mo>
+                        <m:mtext>ln</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mfenced open="(" close=")">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mroot>
+                                <m:msup>
+                                  <m:mn>1</m:mn>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>3</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msup>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>3</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mroot>
+                                <m:mn>1</m:mn>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mn>4</m:mn>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                            </m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mfenced>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>dz</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mo stretchy="false">∣</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mi>x</m:mi>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mn>1,</m:mn>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mi>y</m:mi>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{"ln" left ( nroot { size 8{3} }  {1,"03"} + nroot { size 8{4} }  {0,"98"}  - 1 right ) approx "ln" left ( nroot { size 8{3} }  {1 rSup { size 8{3} } } + nroot { size 8{4} }  {1}  - 1 right )+ ital "dz" \rline  rSub { size 8{x=1,y=1} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </equation>
+        <para id="id1169201031984">се добива дека</para>
+        <para id="id1169201031988"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>ln</m:mtext><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mrow><m:mroot><m:mrow><m:mn>1,</m:mn><m:mtext>03</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:mroot><m:mo stretchy="false">+</m:mo><m:mroot><m:mrow><m:mn>0,</m:mn><m:mtext>98</m:mtext></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo stretchy="false">≈</m:mo><m:mn>0,</m:mn></m:mrow><m:mtext>005</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"ln" left ( nroot { size 8{3} }  {1,"03"} + nroot { size 8{4} }  {0,"98"}  - 1 right ) approx 0,"005"} {}</m:annotation></m:semantics></m:math>. ◄</para>
+      </section>
+    </section>
+  </content>
+</document>
