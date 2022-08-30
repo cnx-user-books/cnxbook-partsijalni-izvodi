@@ -1387,7 +1387,7 @@ The equations of the tangent plane and the normal line at point of a plane in tr
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -1421,10 +1421,10 @@ The equations of the tangent plane and the normal line at point of a plane in tr
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mi/>
                       <m:mrow>
                         <m:msub>
@@ -1446,7 +1446,7 @@ The equations of the tangent plane and the normal line at point of a plane in tr
                         </m:msub>
                       </m:mrow>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
